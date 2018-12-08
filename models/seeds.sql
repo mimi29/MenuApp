@@ -1,4 +1,4 @@
-use foody_corner_db;
+use menuapp_db;
 
 INSERT INTO categories(name)
     VALUES("Appertizer");

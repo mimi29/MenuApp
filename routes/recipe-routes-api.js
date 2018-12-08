@@ -44,7 +44,7 @@ module.exports = function (app) {
       description: req.body.description,
       ingredients: req.body.ingredients,
       instructions: req.body.instructions,
-      CategoryId: req.body.CategoryId,
+      categoryId: req.body.categoryId,
       MemberId: req.body.MemberId,
     }).then(function (dbRecipe) {
       res.json(dbRecipe);

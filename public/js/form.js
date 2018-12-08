@@ -13,12 +13,13 @@ $(document).ready(function(){
   //function below to grab values from form and POST to db
   function insertRecipe(event){
     event.preventDefault();
+    console.log($category.val());
     var newRecipe = {
       name: $recipeName.val().trim(),
       description: $descriptions.val().trim(),
       ingredients: $ingredients.val().trim(),
       instructions: $instructions.val().trim(),
-      CategoryId: $category.val(),
+      categoryId: $category.val(),
       MemberId: loginId
     };
     $.post("/api/recipes", newRecipe);

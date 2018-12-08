@@ -1,10 +1,10 @@
-DROP DATABASE IF EXISTS foody_corner_db;
-CREATE DATABASE foody_corner_db;
+DROP DATABASE IF EXISTS menuapp_db;
+CREATE DATABASE menuapp_db;
 
-DROP DATABASE IF EXISTS test_foody_corner_db;
-CREATE DATABASE test_foody_corner_db
+DROP DATABASE IF EXISTS test_menuapp_db;
+CREATE DATABASE test_menuapp_db
 
-use foody_corner_db;
+use menuapp_db;
 INSERT INTO categories(name)
     VALUES("Appertizer");
 INSERT INTO categories(name)
