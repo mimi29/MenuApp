@@ -2,16 +2,17 @@
 var loginId = 1;
 var memberEmail = "foodycorner@gmail.com";
 
-$(document).ready(function(){
+$(document).ready(function () {
   var $recipeName = $("#name");
   var $descriptions = $("#description");
   var $ingredients = $("#ingredients");
   var $instructions = $("#instruct");
   var $category = $("#category");
+
   $(document).on("submit", ".recipe-form", insertRecipe);
 
   //function below to grab values from form and POST to db
-  function insertRecipe(event){
+  function insertRecipe(event) {
     event.preventDefault();
     console.log($category.val());
     var newRecipe = {
@@ -29,5 +30,10 @@ $(document).ready(function(){
     $instructions.val("");
     $category.val("");
     console.log("New Recipe Submitted");
-  } 
-});
+  }
+
+  $("#myModal").trigger("click");
+}
+
+
+);
